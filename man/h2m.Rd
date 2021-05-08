@@ -19,5 +19,4 @@ how to make herb to molecule or cid of molecule
 .h2m(x='Ziziphi Spinosae Semen',type='latin')
 .h2m(x='houpu',type='pinyin')
 h2m(x=c('Ziziphi Spinosae Semen','Abri Herba'),type='latin')
-h2m(x=c('鍘氭湸','榛勮姫'),type='chinese')
 }

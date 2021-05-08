@@ -9,7 +9,6 @@
 #' .h2m(x='Ziziphi Spinosae Semen',type='latin')
 #' .h2m(x='houpu',type='pinyin')
 #' h2m(x=c('Ziziphi Spinosae Semen','Abri Herba'),type='latin')
-#' h2m(x=c('厚朴','黄芪'),type='chinese')
 h2m<-function(x,type="latin")
 {
   y<-lapply(x,.h2m,type=type)
