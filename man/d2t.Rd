@@ -4,12 +4,14 @@
 \alias{d2t}
 \title{How to make disease to target}
 \usage{
-d2t(x, type = "diseaseId")
+d2t(x, type = "diseaseID", scorevalue = 0.3)
 }
 \arguments{
-\item{x}{is diseaseId or diseaseName}
+\item{x}{is diseaseID or disease}
 
-\item{type}{the class of x}
+\item{type}{is the class of x}
+
+\item{scorevalue}{is the limitation of score}
 }
 \value{
 target symbol and score
@@ -18,8 +20,8 @@ target symbol and score
 How to make disease to target
 }
 \examples{
-.d2t(x='C0009375',type='diseaseId')
-d2t(x=c('C0009375','C0271979'),type='diseaseId')
-.d2t(x='Schizophrenia',type='diseaseName')
-d2t(x=c('Schizophrenia','beta Thalassemia'),type='diseaseName')
+.d2t(x='C0009375',type='diseaseID',scorevalue=0.3)
+d2t(x=c('C0009375','C0271979'),type='diseaseID',scorevalue=0.4)
+.d2t(x='Schizophrenia',type='disease',scorevalue=0.3)
+d2t(x=c('Schizophrenia','beta Thalassemia'),type='disease',scorevalue=0.4)
 }
